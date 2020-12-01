@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 <code>#include &quot;taskqueue.h&quot;</code><br />
 <code>#include &quot;task_inclinometer.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="motor_8h_source.html">motor.h</a>&quot;</code><br />
+<code>#include &quot;mpu6050.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -104,6 +105,9 @@ Share&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:aedae232608142fbbd4ece4cfe363e74c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aedae232608142fbbd4ece4cfe363e74c">task_sim</a> (void *p_params)</td></tr>
 <tr class="memdesc:aedae232608142fbbd4ece4cfe363e74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task which runs a motor.  <a href="main_8cpp.html#aedae232608142fbbd4ece4cfe363e74c">More...</a><br /></td></tr>
 <tr class="separator:aedae232608142fbbd4ece4cfe363e74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe34be57823a89cef1de10ccefdbd9fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afe34be57823a89cef1de10ccefdbd9fe">task_inc_angle</a> (void *p_params)</td></tr>
+<tr class="memdesc:afe34be57823a89cef1de10ccefdbd9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task which calculates the inclination angle X.  <a href="main_8cpp.html#afe34be57823a89cef1de10ccefdbd9fe">More...</a><br /></td></tr>
+<tr class="separator:afe34be57823a89cef1de10ccefdbd9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
 <tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arduino setup function which runs once at program startup.  <a href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">More...</a><br /></td></tr>
 <tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +165,33 @@ Kara Hewson</dd></dl>
 
 <p>Arduino setup function which runs once at program startup. </p>
 <p>This function sets up a serial port for communication and creates the tasks which will be run. </p>
+
+</div>
+</div>
+<a id="afe34be57823a89cef1de10ccefdbd9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe34be57823a89cef1de10ccefdbd9fe">&#9670;&nbsp;</a></span>task_inc_angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void task_inc_angle </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Task which calculates the inclination angle X. </p>
+<p>This task calculates the inclination angle using a function called getAngleX() using the driver mpu6050. After calculating the inclination angle, this task puts the angle into a share so it can be accessed by other tasks.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_params</td><td>A pointer to function parameters which we don't use. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

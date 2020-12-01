@@ -22,12 +22,12 @@ var NAVTREEINDEX0 =
 "main_8cpp.html":[1,0,0],
 "main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d":[1,0,0,2],
 "main_8cpp.html#a8311fa6cd087aea0e0a85d976f8b8745":[1,0,0,0],
-"main_8cpp.html#aedae232608142fbbd4ece4cfe363e74c":[1,0,0,3],
+"main_8cpp.html#aedae232608142fbbd4ece4cfe363e74c":[1,0,0,4],
+"main_8cpp.html#afe34be57823a89cef1de10ccefdbd9fe":[1,0,0,3],
 "main_8cpp.html#afe461d27b9c48d5921c00d521181f12f":[1,0,0,1],
 "motor_8cpp.html":[1,0,1],
 "motor_8cpp.html#ae119003a51f6c9388d6005a9a22f44bc":[1,0,1,0],
 "motor_8h.html":[1,0,2],
 "motor_8h_source.html":[1,0,2],
-"pages.html":[],
-"task__inclinometer_8h_source.html":[1,0,3]
+"pages.html":[]
 };
